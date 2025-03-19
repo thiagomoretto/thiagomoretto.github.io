@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGM - Tecnologia da Informação</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            background-color: #3498db;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+            font-size: 2rem;
+        }
+
+        .about {
+            background-color: white;
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 3rem;
+        }
+
+        .about h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .contact {
+            background-color: white;
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .contact-item {
+            margin-bottom: 1rem;
+        }
+
+        .contact-item h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 1rem;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">TGM</div>
+        <div class="tagline">Tecnologia da Informação</div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h2>Soluções em Tecnologia para o seu Negócio</h2>
+        <p>Oferecemos serviços de suporte técnico, desenvolvimento de software e hospedagem na internet para empresas de todos os portes.</p>
+        <a href="#contact" class="btn">Entre em Contato</a>
+    </section>
+
+    <div class="container">
+        <section id="services">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services">
+                <div class="service-card">
+                    <h3>Suporte Técnico</h3>
+                    <p>Oferecemos suporte técnico especializado para manter sua infraestrutura de TI funcionando sem problemas. Nossos especialistas estão disponíveis para resolver qualquer problema técnico que sua empresa possa enfrentar.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Desenvolvimento de Software</h3>
+                    <p>Desenvolvemos programas de computador sob encomenda, adaptados às necessidades específicas do seu negócio. Desde aplicações web até sistemas completos de gestão empresarial.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Hospedagem e Serviços na Nuvem</h3>
+                    <p>Fornecemos serviços de hospedagem na internet, tratamento de dados e provedores de serviços de aplicação para garantir que suas soluções digitais estejam sempre disponíveis e seguras.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2 class="section-title">Sobre Nós</h2>
+            <p>A TGM Tecnologia da Informação é uma empresa especializada em soluções de TI para empresas de todos os portes. Com experiência no mercado, oferecemos serviços de alta qualidade em suporte técnico, desenvolvimento de software e hospedagem na internet.</p>
+            <p>Nossa missão é fornecer soluções tecnológicas que impulsionem o crescimento e a eficiência dos nossos clientes, sempre com foco na qualidade e na satisfação.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="section-title">Contato</h2>
+            <div class="contact-info">
+                <div>
+                    <div class="contact-item">
+                        <h3>Endereço</h3>
+                        <p>Calçada das Margaridas, 163, Sala 2</p>
+                        <p>Condomínio Centro Comercial Alphaville</p>
+                        <p>Barueri - SP, CEP: 06453-038</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="contact-item">
+                        <h3>Horário de Funcionamento</h3>
+                        <p>Segunda a Sexta: 9h às 18h</p>
+                        <p>Sábados: 9h às 13h</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 TGM - Tecnologia da Informação. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
